@@ -5,7 +5,7 @@ const todoschema = new mongoose.create({
         type : String,
         requrie : true,
     },
-    task  : []
+    task  : [String]
 })
 
 exports.module = mongoose.model("Todo" , todoschema)
